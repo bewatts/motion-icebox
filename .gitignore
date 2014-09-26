@@ -1,2 +1,4 @@
 .idea/
+projectFilesBackup/
 *.iml
+*.gem
