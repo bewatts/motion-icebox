@@ -20,7 +20,7 @@ no
 
 ##Can I See an example? 
 yes.  
-
+```
 class Human
 
   attr_reader :name
@@ -61,7 +61,7 @@ puts simon.object_id
 ice_king = Icebox.unfreeze(:simon)
 puts ice_king.status
 puts ice_king.object_id
-
+```
 
 ##Does Icebox have a mascot? 
 yes 
