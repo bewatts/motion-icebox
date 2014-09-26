@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["Ben Watts", "justalisteningman"]
   spec.email = 'ben@benjaminclaywatts.com'
   spec.homepage = "http://rubymotionquery.com"
-  spec.version = .1
+  spec.version = '0.1.1'
   spec.license = 'MIT'
 
   files = []

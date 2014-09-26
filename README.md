@@ -4,11 +4,16 @@ Fed up with only using puts statements to debug your rubymotion programs?
 
 Wish you could see what your objects' state are at any given time? 
 
-Enter Icebox:  Freeze an object!  Extract it later!  Examine what your objects are doing at a given time! 
+**Enter Icebox!**
+
+Icebox presents a simple key/value store for your rubymotion debugging needs. 
+
+Freeze an object!  Extract it later!  Examine what your objects are doing at a given time! 
 
 Icebox Deep duplicates your objects if possible. If not, it makes a clone.
 
-##Methods
+
+##API
 
 ```
     Icebox.freeze(object, :tag) # => freezes your object in memory at it's given state
@@ -49,7 +54,7 @@ end
 
 simon = Human.new('Simon Petrikov')
 
-Icebox.freeze(simon, name: :simon)
+Icebox.freeze(simon, :ice_king)
 
 1_000.times do
   simon.heartbeat
@@ -58,12 +63,17 @@ end
 puts simon.status
 puts simon.object_id
 
-ice_king = Icebox.unfreeze(:simon)
+ice_king = Icebox.unfreeze(:ice_king)
 puts ice_king.status
 puts ice_king.object_id
 ```
 
+##Future Development ideas
+1. Passing in an option the method by which you want to save your object. 
+2. Meta-data about how the object was saved, and when.
+
 ##Does Icebox have a mascot? 
 yes 
+
 
 ![Gunter](http://img2.wikia.nocookie.net/__cb20121016040602/adventuretimewithfinnandjake/images/6/68/Gunter.png)

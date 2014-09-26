@@ -1,7 +1,7 @@
 class Icebox
 
-  def self.freeze(obj, options = {})
-    instance.freeze(obj, options)
+  def self.freeze(obj, name, options = {})
+    instance.freeze(obj, name, options)
   end
 
   def self.unfreeze(name = nil)
@@ -14,8 +14,8 @@ class Icebox
 
   attr_reader :storage
 
-  def freeze(obj, options)
-    storage[options[:name]] = val(obj)
+  def freeze(obj, name, options)
+    storage[name] = val(obj)
   end
 
   def unfreeze(name)
