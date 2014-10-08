@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["Ben Watts", "justalisteningman"]
   spec.email = 'ben@benjaminclaywatts.com'
   spec.homepage = "http://rubymotionquery.com"
-  spec.version = '0.1.3'
+  spec.version = '0.1.3.1'
   spec.license = 'MIT'
 
   files = []
