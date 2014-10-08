@@ -1,0 +1,18 @@
+PATH
+  remote: .
+  specs:
+    motion-icebox (0.1.3.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bacon (1.2.0)
+    rake (10.3.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bacon
+  motion-icebox!
+  rake

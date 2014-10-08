@@ -27,7 +27,7 @@ class Icebox
   end
 
   def val(obj)
-    StoredObject.new(obj)
+    IB::StoredObject.new(obj)
   end
 end
 
